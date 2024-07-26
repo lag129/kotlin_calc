@@ -1,11 +1,6 @@
 var idx = 0
 val buffer = readln().toCharArray()
 
-fun main() {
-    val result = addSub()
-    println(result)
-}
-
 fun integer(): Int {
     var number = 0
     var sign = 1
@@ -22,17 +17,28 @@ fun integer(): Int {
     return number * sign
 }
 
+fun paren(): Int {
+    if (buffer[idx] == '(') {
+        idx++
+        val result = addSub()
+        idx++
+        return result
+    } else {
+        return integer()
+    }
+}
+
 fun mulDiv(): Int {
-    var result = integer()
+    var result = paren()
     while (idx < buffer.size && (buffer[idx] == '*' || buffer[idx] == '/')) {
         when (buffer[idx]) {
             '*' -> {
                 idx++
-                result *= integer()
+                result *= paren()
             }
             '/' -> {
                 idx++
-                result /= integer()
+                result /= paren()
             }
         }
     }
@@ -54,4 +60,9 @@ fun addSub(): Int {
         }
     }
     return result
+}
+
+fun main() {
+    val result = addSub()
+    println(result)
 }
