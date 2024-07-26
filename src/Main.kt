@@ -27,6 +27,14 @@ fun calc(): Int {
                 idx++
                 result -= integer()
             }
+            '*' -> {
+                idx++
+                result *= integer()
+            }
+            '/' -> {
+                idx++
+                result /= integer()
+            }
         }
     }
     return result
