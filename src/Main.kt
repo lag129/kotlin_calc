@@ -3,9 +3,17 @@ val buffer = readln().toCharArray()
 
 fun main() {
     var result = integer()
-    while (idx < buffer.size && buffer[idx] == '+') {
-        idx++
-        result += integer()
+    while (idx < buffer.size && (buffer[idx] == '+' || buffer[idx] == '-')) {
+        when (buffer[idx]) {
+            '+' -> {
+                idx++
+                result += integer()
+            }
+            '-' -> {
+                idx++
+                result -= integer()
+            }
+        }
     }
     println(result)
 }
