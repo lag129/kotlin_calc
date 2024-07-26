@@ -2,7 +2,7 @@ var idx = 0
 val buffer = readln().toCharArray()
 
 fun main() {
-    val result = calc()
+    val result = addSub()
     println(result)
 }
 
@@ -15,18 +15,27 @@ fun integer(): Int {
     return number
 }
 
-fun calc(): Int {
-    var result = integer()
-    while (idx < buffer.size) {
+fun addSub(): Int {
+    var result = mulDiv()
+    while (idx < buffer.size && (buffer[idx] == '+' || buffer[idx] == '-')) {
         when (buffer[idx]) {
             '+' -> {
                 idx++
-                result += integer()
+                result += mulDiv()
             }
             '-' -> {
                 idx++
-                result -= integer()
+                result -= mulDiv()
             }
+        }
+    }
+    return result
+}
+
+fun mulDiv(): Int {
+    var result = integer()
+    while (idx < buffer.size && (buffer[idx] == '*' || buffer[idx] == '/')) {
+        when (buffer[idx]) {
             '*' -> {
                 idx++
                 result *= integer()
