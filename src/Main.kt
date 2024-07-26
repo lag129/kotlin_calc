@@ -8,28 +8,18 @@ fun main() {
 
 fun integer(): Int {
     var number = 0
+    var sign = 1
+    if (buffer[idx] == '-') {
+        idx++
+        sign = -1
+    } else if (buffer[idx] == '+') {
+        idx++
+    }
     while (idx < buffer.size && buffer[idx] in '0'..'9') {
         number = number*10 + (buffer[idx] - '0')
         idx++
     }
-    return number
-}
-
-fun addSub(): Int {
-    var result = mulDiv()
-    while (idx < buffer.size && (buffer[idx] == '+' || buffer[idx] == '-')) {
-        when (buffer[idx]) {
-            '+' -> {
-                idx++
-                result += mulDiv()
-            }
-            '-' -> {
-                idx++
-                result -= mulDiv()
-            }
-        }
-    }
-    return result
+    return number * sign
 }
 
 fun mulDiv(): Int {
@@ -43,6 +33,23 @@ fun mulDiv(): Int {
             '/' -> {
                 idx++
                 result /= integer()
+            }
+        }
+    }
+    return result
+}
+
+fun addSub(): Int {
+    var result = mulDiv()
+    while (idx < buffer.size && (buffer[idx] == '+' || buffer[idx] == '-')) {
+        when (buffer[idx]) {
+            '+' -> {
+                idx++
+                result += mulDiv()
+            }
+            '-' -> {
+                idx++
+                result -= mulDiv()
             }
         }
     }
