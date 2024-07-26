@@ -2,8 +2,11 @@ var idx = 0
 val buffer = readln().toCharArray()
 
 fun main() {
-    val number = integer()
-    println(number)
+    val left = integer()
+    idx+=1
+    val right = integer()
+    val result = left + right
+    println(result)
 }
 
 fun integer(): Int {
