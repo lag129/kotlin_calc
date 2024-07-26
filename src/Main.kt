@@ -1,10 +1,16 @@
+var idx = 0
+val buffer = readln().toCharArray()
+
 fun main() {
-    val buffer = readln().toCharArray()
-    var number = 0
-    var i = 0
-    while (i < buffer.size && buffer[i] in '0'..'9') {
-        number = number*10 + (buffer[i] - '0')
-        i++
-    }
+    val number = integer()
     println(number)
+}
+
+fun integer(): Int {
+    var number = 0
+    while (idx < buffer.size && buffer[idx] in '0'..'9') {
+        number = number*10 + (buffer[idx] - '0')
+        idx++
+    }
+    return number
 }
