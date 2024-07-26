@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad3fdce-2472-48fc-8e8f-4213c8cc841f" name="変更" comment="ステップ4">
+    <list default="true" id="bad3fdce-2472-48fc-8e8f-4213c8cc841f" name="変更" comment="ステップ5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -56,7 +58,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721906772009</updated>
       <workItem from="1721906773150" duration="2426000" />
-      <workItem from="1721965233476" duration="3252000" />
+      <workItem from="1721965233476" duration="3626000" />
+      <workItem from="1721970449669" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -82,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721969956451</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ステップ5">
+      <option name="closed" value="true" />
+      <created>1721970125599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721970125599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +103,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="ステップ3" />
     <MESSAGE value="ステップ4" />
-    <option name="LAST_COMMIT_MESSAGE" value="ステップ4" />
+    <MESSAGE value="ステップ5" />
+    <option name="LAST_COMMIT_MESSAGE" value="ステップ5" />
   </component>
 </project>

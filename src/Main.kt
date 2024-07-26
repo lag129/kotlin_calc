@@ -3,8 +3,11 @@ val buffer = readln().toCharArray()
 
 fun main() {
     val left = integer()
-    idx+=1
-    val right = integer()
+    var right = 0
+    if (idx < buffer.size && buffer[idx] == '+') {
+        idx++
+        right = integer()
+    }
     val result = left + right
     println(result)
 }
