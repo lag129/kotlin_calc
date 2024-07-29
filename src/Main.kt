@@ -69,8 +69,10 @@ fun addSub(): Int {
 fun main() {
     val exitCommands = setOf("exit", "quit")
     while (true) {
-        val input = readlnOrNull() ?: break
+        val input = readlnOrNull()?.replace(" ", "") ?: break
+        if (input.isEmpty()) continue
         if (input in exitCommands) break
+
         buffer = input.toCharArray()
         val result = addSub()
         println(result)
