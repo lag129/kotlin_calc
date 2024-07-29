@@ -1,5 +1,5 @@
 var idx = 0
-val buffer = readln().toCharArray()
+var buffer = charArrayOf()
 
 fun integer(): Int {
     var number = 0
@@ -67,6 +67,12 @@ fun addSub(): Int {
 }
 
 fun main() {
-    val result = addSub()
-    println(result)
+    val exitCommands = setOf("exit", "quit")
+    while (true) {
+        val input = readlnOrNull() ?: break
+        if (input in exitCommands) break
+        buffer = input.toCharArray()
+        val result = addSub()
+        println(result)
+    }
 }
