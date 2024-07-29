@@ -30,7 +30,7 @@ fun paren(): Int {
 
 fun mulDiv(): Int {
     var result = paren()
-    while (idx < buffer.size && (buffer[idx] == '*' || buffer[idx] == '/')) {
+    while (idx < buffer.size && (buffer[idx] == '*' || buffer[idx] == '/' || buffer[idx] == '%')) {
         when (buffer[idx]) {
             '*' -> {
                 idx++
@@ -39,6 +39,10 @@ fun mulDiv(): Int {
             '/' -> {
                 idx++
                 result /= paren()
+            }
+            '%' -> {
+                idx++
+                result %= paren()
             }
         }
     }

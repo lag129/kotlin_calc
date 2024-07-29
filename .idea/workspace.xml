@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad3fdce-2472-48fc-8e8f-4213c8cc841f" name="変更" comment="ステップ12">
+    <list default="true" id="bad3fdce-2472-48fc-8e8f-4213c8cc841f" name="変更" comment="ステップ15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
@@ -16,6 +16,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lag129&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lag129/kotlin_calc.git&quot;,
+    &quot;accountId&quot;: &quot;3c0b9dd8-8154-4c6e-87b2-67fcbb19e47b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -29,7 +41,7 @@
   &quot;keyToString&quot;: {
     &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -41,6 +53,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tatsu\dev\repos\kotlin-projects\kotlin_calc\src\main\kotlin" />
+      <recent name="C:\Users\tatsu\dev\repos\kotlin-projects\kotlin_calc\src\main" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,7 +78,12 @@
       <workItem from="1721906773150" duration="2426000" />
       <workItem from="1721965233476" duration="3626000" />
       <workItem from="1721970449669" duration="4428000" />
-      <workItem from="1721978959807" duration="1048000" />
+      <workItem from="1721978959807" duration="1369000" />
+      <workItem from="1721988368480" duration="3873000" />
+      <workItem from="1722003815980" duration="1602000" />
+      <workItem from="1722066673364" duration="298000" />
+      <workItem from="1722068798177" duration="24000" />
+      <workItem from="1722229348681" duration="1400000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -158,11 +181,30 @@
       <option name="project" value="LOCAL" />
       <updated>1721979336225</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ステップ15">
+      <option name="closed" value="true" />
+      <created>1721980063573</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721980063573</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -176,6 +218,7 @@
     <MESSAGE value="ステップ10" />
     <MESSAGE value="ステップ11" />
     <MESSAGE value="ステップ12" />
-    <option name="LAST_COMMIT_MESSAGE" value="ステップ12" />
+    <MESSAGE value="ステップ15" />
+    <option name="LAST_COMMIT_MESSAGE" value="ステップ15" />
   </component>
 </project>
